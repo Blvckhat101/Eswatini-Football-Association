@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">  
+<html>   
+<head> 
+<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title> Login Page </title>  
+</head> 
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+  Body {  
+    font-family: Tahoma, Verdana, sans-serif;  
+    background-color:#005d88;
+  
+   
+  }  
+  
+  button {   
+         background-color:#005d88;   
+         width: 30%;  
+          color: white;
+          font-weight: bold;   
+          padding: 10px;     
+          border: none;   
+          cursor: pointer;
+          border-radius: 5px;
+          margin-top: 10px;
+          margin-left: 35%;
+          
+           }   
+   form {   
+          border:none;   
+      }   
+   input[type=text], input[type=password] {   
+          width: 100%;   
+          margin: 8px 0;  
+          padding: 12px 20px;   
+          display: inline-block;   
+          border: 1px solid grey;   
+          box-sizing: border-box;
+          border-radius: 5px;
+           
+          
+      } 
+      
+   button:hover {   
+          opacity: 0.7;   
+      }   
+    .wrapper{
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 1px #0000001a;
+      }
+  .wrapper .title{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 90px;
+    background:#005d88;
+    border-radius: 5px 5px 0 0;
+    color: #ffffffd8;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wrapper form{
+    padding: 30px 25px 25px 25px;
+  }
+  .wrapper form .pass a{
+    color: #005d88;
+    font-size: 17px;
+    text-decoration: none;
+    float: right;
+  }
+  .wrapper form .pass{
+    margin-top: 0px;
+    font-size: 17px;
+    vertical-align:right;
+  
+    }
+  .wrapper form .pass a:hover{
+    text-decoration: underline;
+      }
+   .container {   
+          padding: 25px;   
+          width: 33%;
+          margin:170px auto;
+          
+      } 
+      .wrapper form .signup-link{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+  }
+  .wrapper form .signup-link a{
+    color: #005d88;
+    text-decoration: none;
+  }
+  
+  form .signup-link a:hover{
+    text-decoration: underline;
+  }
+  
+  </style>  
+<body>
+      <div class="container">
+        <div class="wrapper">    
+          <div class="title"><span>Login</span></div>   
+    <form action="index.php" method="POST" >
+        <div>  
+            <label>Username: </label>
+            <div class="row"> 
+            <input type="text" placeholder="Enter username" name="username" required>
+            </div>  
+            <label>Password : </label>
+            <div class="row">  
+            <input type="password" placeholder="Enter Password" name="password" required>
+            </div>
+             <div class="pass"><a href="#">Forgot password?</a></div> 
+            <input type="checkbox" checked="checked">Remember me
+            <button type="submit">Login</button>  
+             <div class="signup-link">Not yet registered? <a href="">Register</a></div>    
+    </form> 
+    </div>
+</div>
+
+       
+</body>     
+</html>  
